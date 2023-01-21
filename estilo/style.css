@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+}
+
+:root {
+    --font-title: 'Roboto Mono', monospace;
+    --font-content:'Marcellus', serif;
+}
+
+body {
+    font-family: var(--font-content);
+    font-weight: bold;
+}
+
+
+header  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: cornflowerblue;
+    background-image: url(../images/istanbu.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+header h1 {
+    text-align: center;
+    font-size: 10vh;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.548);
+}
+
+header h1 strong {
+    color: red;
+    font-size: 6vh;
+    
+}
+
+.navegation li a{
+    color: black;
+    font-size: 3vh;
+    transition: ease-in 0.4s;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.47);
+}
+
+.navegation li a:hover {
+    background-color: rgb(159, 109, 71);
+    padding: 15px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.374);
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.415);
+}
+
+.navegation li {
+    display: inline;
+    padding: 14px;
+    
+}
+
+ion-icon {
+    font-size: 4vh;
+    padding-left: 30px;
+    transition: ease-in 0.4s;
+    color: red;
+    
+}
+
+ion-icon:hover {
+    background-color: rgb(159, 109, 71);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.374);
+    color: white;
+   
+}
+
+button {
+    border: 0px;
+    background-color: transparent;
+    text-shadow: 2px 2px 5px black;
+}
+/**HEADER--------------**/
+
+
+
+
+
+.main-title {
+    display:block;
+    font-size: 4vh;
+    padding-bottom: 6vh;
+    padding-top: 5vh;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.548);
+}
+
+.main-title strong {
+    color: red;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.548);
+}
+
+.text-content {
+    display: inline-block;
+    width: 70vh;
+    padding: 3vh;
+    padding-bottom: 13vh;
+    color: black;
+    background: linear-gradient(to bottom,#F6C9A2,  rgba(36, 36, 36, 0.346));
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.522);
+    line-height: 3vh;
+    font-size: 3vh;
+}
+
+
+
+aside{
+    position: absolute;
+    top:150%;
+    left: 38%;
+   
+
+}
+
+#main-content {
+    height: 160vh;
+    background: linear-gradient(to bottom,#fabc85,  rgba(73, 73, 250, 0.346));
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    
+}
+
+
+div#video {
+    width: 120vh;
+    
+    
+
+}
+/**MAIN PT 01 ------------**/
+
+
+
+#main-content02 {
+    height: 150vh;
+    background-image: url(../images/istanbu02.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.text-content02 {
+    display: inline-block;
+    width: 70vh;
+    padding: 3vh;
+    padding-top: 20vh;
+    color: white;
+    background-color:linear-gradient(to bottom,#fabc85,  rgba(73, 73, 250, 0.346));
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.522);
+    line-height: 5vh;
+    font-size: 3vh;
+}
+
+/** RESPONSIVO -----------------------------------**/
+
+@media screen and (max-width: 700px) {
+
+ header  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100vh;
+        background-color: cornflowerblue;
+        background-image: url(../images/istanbu.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    
+}
+
+header h1 {
+    display: inline-block;
+    text-align: right;
+    font-size: 5vh;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.548);
+}
+
+header h1 strong {
+    color: red;
+    font-size: 3vh;
+    
+}
+
+.navegation li a{
+    color: white; 
+    font-size: 3vh;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.763);
+    
+}
+
+.navegation li {
+    display: inline;
+    padding: 14px;
+    
+}
+
+ion-icon {
+    font-size: 3vh;
+}
+
+
+
+button {
+    border: 0px;
+    background-color: transparent;
+    text-shadow: 2px 2px 5px black;
+}
+
+/**HEADER RESPONSIVO--------------------------**/
+
+.main-title {
+    display:block;
+    font-size: 3vh;
+    padding-bottom: 6vh;
+    padding-top: 5vh;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.548);
+}
+.text-content {
+    display: inline-block;
+    height: 180vh;
+    width: 100%;
+    padding: 30px;
+    text-align: justify;
+    color: black;
+    background-color:#F6C9A2;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.522);
+    line-height: 3.6vh;
+    font-size: 1.1em;
+}
+
+aside{
+    position: absolute;
+    top:285%;
+    left: 2%;
+   
+
+}
+
+div#video {
+    width: 100%;
+    height: 100%;
+}
+/** CONTEUDO PT01-----------------**/
+
+#main-content02 {
+    height: 220vh;
+    background-image: url(../images/istanbu02.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.text-content02 {
+    display: inline-block;
+    width: 100%;
+    padding: 3vh;
+    padding-top: 76vh;
+    color: white;
+    background-color:linear-gradient(to bottom,#fabc85,  rgba(73, 73, 250, 0.346));
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.522);
+    line-height: 5vh;
+    font-size: 1.1em;
+}
+
+
+
+
+
+
+}
